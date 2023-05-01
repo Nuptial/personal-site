@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.typed-cursor {
+  color: white;
+}
+
 .animation-text.moveTop {
   top: 20%;
 }
