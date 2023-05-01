@@ -19,6 +19,7 @@ function App() {
       ],
       typeSpeed: 30,
       backSpeed: 30,
+      fadeOut: true,
       backDelay: 500,
       startDelay: 1000,
       onComplete: (self) => {
