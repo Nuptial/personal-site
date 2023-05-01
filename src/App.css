@@ -1,16 +1,16 @@
 .App {
   text-align: center;
   background-color: #1e1c1c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  alignItems: center;
+  justifyContent: center;
 }
 .animation-text {
-  transition: all .5s ease-in-out;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   color: white;
   font-size: 24px;
+  position: relative;
 }
 
 .animation-text.moveTop {
