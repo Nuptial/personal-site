@@ -23,8 +23,7 @@ function App() {
       startDelay: 1000,
       showCursor: true,
       cursorChar: '|',
-      onComplete: (self) => {
-        self.cursor.remove();
+      onComplete: () => {
         const animationText =
           document.getElementsByClassName("animation-text")[0];
 
