@@ -43,18 +43,21 @@ function App() {
             target="_blank"
             bgColor="white"
             id="github-icon"
+            className="social-icon"
           />
           <SocialIcon
             url="https://www.linkedin.com/in/alican-%C3%A7aml%C4%B1bel-7a160290/"
             target="_blank"
             bgColor="white"
             id="linkedin-icon"
+            className="social-icon"
           />
           <SocialIcon
             url="https://medium.com/@alican.camlibel91"
             target="_blank"
             bgColor="white"
             id="medium-icon"
+            className="social-icon"
           />
         </div>
       )}
