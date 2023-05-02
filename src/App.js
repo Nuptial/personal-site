@@ -1,6 +1,5 @@
 import Typed from "typed.js";
 import { useEffect, useRef, useState } from "react";
-import { SocialIcon } from "react-social-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -29,7 +28,8 @@ function App() {
       backDelay: 500,
       startDelay: 1000,
       onComplete: (self) => {
-        document.getElementsByClassName("App")[0].style["flex-direction"] = "column";
+        document.getElementsByClassName("App")[0].style["flex-direction"] =
+          "column";
         self.cursor.remove();
         setVisibleSocialIcons(true);
       },
@@ -45,26 +45,29 @@ function App() {
       {visibleSocialIcons && (
         <div className="social-container">
           <a
-          href="https://github.com/Nuptial"
-          target="_blank"
-          className="social github"
-        >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
-        </a>
- <a
-          href="https://www.linkedin.com/in/alican-%C3%A7aml%C4%B1bel-7a160290/"
-          target="_blank"
-          className="social linkedin"
-        >
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
-        </a>
- <a
-          href="https://medium.com/@alican.camlibel91"
-          target="_blank"
-          className="social medium"
-        >
-          <FontAwesomeIcon icon={faMedium} size="2x" />
-        </a>
+            href="https://github.com/Nuptial"
+            target="_blank"
+            className="social github"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alican-%C3%A7aml%C4%B1bel-7a160290/"
+            target="_blank"
+            className="social linkedin"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a
+            href="https://medium.com/@alican.camlibel91"
+            target="_blank"
+            className="social medium"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faMedium} size="2x" />
+          </a>
         </div>
       )}
     </div>

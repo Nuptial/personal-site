@@ -25,7 +25,8 @@
 
 a.social {
   opacity: 0;
-  margin-left: 10px;
+  margin-left: 20px;
+  color: white;
 }
 
 a.social:hover {
