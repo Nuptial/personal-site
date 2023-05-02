@@ -10,6 +10,9 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-social-icons": "^5.15.0",
+    "@fortawesome/fontawesome-svg-core": "1.2.21",
+    "@fortawesome/free-brands-svg-icons": "5.10.1",
+    "@fortawesome/react-fontawesome": "0.1.4",
     "typed.js": "^2.0.15",
     "web-vitals": "^2.1.4"
   },
