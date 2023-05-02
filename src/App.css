@@ -23,20 +23,24 @@
   display: flex;
 }
 
-.social-icon {
+a.social {
   opacity: 0;
   margin-left: 10px;
 }
 
-#github-icon {
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.social.github {
   animation: load 5s forwards 1.5s;
 }
 
-#linkedin-icon {
+a.social.linkedin {
   animation: load 5s forwards 2.5s;
 }
 
-#medium-icon {
+a.social.medium {
   animation: load 5s forwards 3.5s;
 }
 
