@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <span ref={el} className="animation-text"></span>
       {visibleSocialIcons && (
-        <>
+        <div>
           <SocialIcon
             url="https://github.com/Nuptial"
             target="_blank"
@@ -59,7 +59,7 @@ function App() {
             bgColor="white"
             id="medium-icon"
           />
-        </>
+        </div>
       )}
     </div>
   );
