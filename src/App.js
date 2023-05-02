@@ -23,7 +23,7 @@ function App() {
       backDelay: 500,
       startDelay: 1000,
       onComplete: (self) => {
-        document.getElementsByClassName("animation-text")[0].style["top"] = "-10%";
+        document.getElementsByClassName("App")[0].style["flex-direction"] = "column";
         self.cursor.remove();
         setVisibleSocialIcons(true);
       },
@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <span ref={el} className="animation-text"></span>
       {visibleSocialIcons && (
-        <>
+        <div className="social-container">
           <SocialIcon
             url="https://github.com/Nuptial"
             target="_blank"
@@ -56,7 +56,7 @@ function App() {
             bgColor="white"
             id="medium-icon"
           />
-        </>
+        </div>
       )}
     </div>
   );
