@@ -19,8 +19,8 @@
   color: white;
 }
 
-.animation-text.moveTop {
-  top: -20%;
+.social-container {
+  margin-top: 50px;
 }
 
 .social-icon {
