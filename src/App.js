@@ -24,10 +24,6 @@ function App() {
       startDelay: 1000,
       onComplete: (self) => {
         self.cursor.remove();
-        const animationText =
-          document.getElementsByClassName("animation-text")[0];
-
-        animationText.classList.add("moveTop");
         setVisibleSocialIcons(true);
       },
     });
