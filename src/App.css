@@ -21,11 +21,11 @@
 .social-container {
   margin-top: 50px;
   display: flex;
+  gap: 20px;
 }
 
 a.social {
   opacity: 0;
-  margin-left: 20px;
   color: white;
 }
 
@@ -34,15 +34,15 @@ a.social:hover {
 }
 
 a.social.github {
-  animation: load 5s forwards 1.5s;
+  animation: load 3s forwards 1.5s;
 }
 
 a.social.linkedin {
-  animation: load 5s forwards 2.5s;
+  animation: load 3s forwards 2.5s;
 }
 
 a.social.medium {
-  animation: load 5s forwards 3.5s;
+  animation: load 3s forwards 3.5s;
 }
 
 @keyframes load {
