@@ -23,7 +23,7 @@ function App() {
       backDelay: 500,
       startDelay: 1000,
       onComplete: (self) => {
-        document.getElementsByClassName("App")[0].style["flex-direction"] = "column";
+        document.getElementsByClassName("animation-text")[0].style["top"] = "-10%";
         self.cursor.remove();
         setVisibleSocialIcons(true);
       },
