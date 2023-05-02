@@ -1,6 +1,12 @@
 import Typed from "typed.js";
 import { useEffect, useRef, useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./App.css";
 
@@ -38,24 +44,27 @@ function App() {
       <span ref={el} className="animation-text"></span>
       {visibleSocialIcons && (
         <div className="social-container">
-          <SocialIcon
-            url="https://github.com/Nuptial"
-            target="_blank"
-            bgColor="white"
-            id="github-icon"
-          />
-          <SocialIcon
-            url="https://www.linkedin.com/in/alican-%C3%A7aml%C4%B1bel-7a160290/"
-            target="_blank"
-            bgColor="white"
-            id="linkedin-icon"
-          />
-          <SocialIcon
-            url="https://medium.com/@alican.camlibel91"
-            target="_blank"
-            bgColor="white"
-            id="medium-icon"
-          />
+          <a
+          href="https://github.com/Nuptial"
+          target="_blank"
+          className="social github"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+ <a
+          href="https://www.linkedin.com/in/alican-%C3%A7aml%C4%B1bel-7a160290/"
+          target="_blank"
+          className="social linkedin"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+ <a
+          href="https://medium.com/@alican.camlibel91"
+          target="_blank"
+          className="social medium"
+        >
+          <FontAwesomeIcon icon={faMedium} size="2x" />
+        </a>
         </div>
       )}
     </div>
