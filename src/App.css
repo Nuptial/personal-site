@@ -1,17 +1,44 @@
-.App {
-  text-align: center;
-  background-color: #1e1c1c;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Root seviyesinde scroll'u engellemek için */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.animation-text {
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  height: 100vh;
+  /* Sabit yükseklik */
+  width: 100vw;
+  /* Tam genişlik */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 20px;
   transition: all 0.5s ease;
-  color: white;
-  font-size: 24px;
-  position: relative;
+  overflow: hidden;
+  /* Scroll'u engelle */
+}
+
+.animation-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  /* Responsive font size */
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+  max-width: min(800px, 90vw);
+  /* Responsive max-width */
 }
 
 .typed-cursor {
@@ -19,37 +46,109 @@
 }
 
 .social-container {
-  margin-top: 50px;
+  margin-top: 2rem;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
-a.social {
-  opacity: 0;
+.social {
   color: white;
+  margin: 0 10px;
+  opacity: 0;
 }
 
-a.social:hover {
-  transform: translateY(-2px);
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
 }
 
-a.social.github {
-  animation: load 3s forwards 1.5s;
-}
-
-a.social.linkedin {
-  animation: load 3s forwards 2.5s;
-}
-
-a.social.medium {
-  animation: load 3s forwards 3.5s;
-}
-
-@keyframes load {
-  0% {
+@keyframes fadeIn {
+  from {
     opacity: 0;
+    transform: translateY(20px);
   }
-  100% {
+
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.social:hover {
+  transform: scale(1.2) rotate(360deg);
+  transition: all 0.3s ease;
+}
+
+/* Her ikon için farklı gecikme süresi */
+.github {
+  animation-delay: 0s;
+}
+
+.linkedin {
+  animation-delay: 0.2s;
+}
+
+.medium {
+  animation-delay: 0.4s;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* Sosyal medya ikonlarının renklerini özelleştirmek için ekleyebilirsiniz */
+.github:hover {
+  color: #6e5494;
+  /* GitHub'ın açık tema rengi */
+  /* veya */
+  /* color: #6e5494; */
+  /* GitHub'ın mor rengi */
+  /* veya */
+  /* color: #2ea44f; */
+  /* GitHub'ın yeşil rengi */
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.medium:hover {
+  color: #00ab6c;
+}
+
+/* Responsive tasarım için medya sorguları */
+@media (max-width: 768px) {
+  .social-container {
+    gap: 1.5rem;
+  }
+
+  .social {
+    font-size: 1.5rem;
+    /* Mobilde daha küçük ikonlar */
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+  }
+
+  .social-container {
+    gap: 1rem;
+  }
+
+  .social {
+    font-size: 1.2rem;
+  }
+}
+
+.medium:hover {
+  color: #00ab6c;
 }
