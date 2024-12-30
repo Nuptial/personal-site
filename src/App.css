@@ -16,29 +16,25 @@ body {
 .App {
   min-height: 100vh;
   height: 100vh;
-  /* Sabit yükseklik */
   width: 100vw;
-  /* Tam genişlik */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #1a1a1a;
   padding: 20px;
   transition: all 0.5s ease;
   overflow: hidden;
-  /* Scroll'u engelle */
 }
 
 .animation-text {
   font-family: 'Inter', sans-serif;
   font-size: clamp(1.5rem, 5vw, 2.5rem);
-  /* Responsive font size */
   font-weight: 300;
   color: #ffffff;
   text-align: center;
   line-height: 1.4;
   max-width: min(800px, 90vw);
-  /* Responsive max-width */
 }
 
 .typed-cursor {
@@ -46,9 +42,12 @@ body {
 }
 
 .social-container {
-  margin-top: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .social {
